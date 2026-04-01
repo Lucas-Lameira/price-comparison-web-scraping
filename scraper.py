@@ -18,17 +18,17 @@ def extract_price_from_text(text):
 def scrape_amazon(page, url):
     page.goto(url, timeout=60000)
     try:
-        page.wait_for_selector('#corePriceDisplay_desktop_feature_div', timeout=10000)
-        whole = page.locator('#corePriceDisplay_desktop_feature_div .a-price-whole').first.inner_text()
-        fraction = page.locator('#corePriceDisplay_desktop_feature_div .a-price-fraction').first.inner_text()
-        if whole and fraction:
-             price_str = f"{whole}{fraction}".replace('.', '').replace(',', '.')
-             return float(price_str)
+        page.wait_for_selector('.a-price.priceToPay', timeout=10000)
+        raw_text = page.locator('.a-price.priceToPay').first.inner_text()
+        clean_text = raw_text.replace('\n', '')
+        price = extract_price_from_text(clean_text)
+        if price is not None:
+            return price
     except Exception:
         pass
 
     text = page.locator('body').inner_text()
-    return extract_price_from_text(text)
+    return extract_price_from_text(text.replace('\n', ''))
 
 def scrape_kabum(page, url):
     page.goto(url, timeout=60000)
