@@ -1,0 +1,17 @@
+{
+  "products": [
+    {
+      "store": "Amazon",
+      "url": "https://www.amazon.com.br/KF432C16BB-Mem%C3%B3ria-3200Mhz-desktop-gamers/dp/B097K5J1SB/ref=sr_1_3?crid=3CH0ZUHE6W7ML&dib=eyJ2IjoiMSJ9.ZqPJQrNF9w_ySb5l-HW56zKJi5gzZV9kcYknxD0BV9iqjkcpiuBD2ruixJuACsJi54Vae7-GBl-1GJNkhGnZAfy9cM51YSz6g9ALPVxQoGDAAeOA_4V9EuPxJHEjmqJQwY9M_GS0jDCRi09T1mz_mdqsJ2mgjV0M82HhXcuGtqjb9FLgxrTLyEgNPaikGAuVlaRCwPaP6UmhQUyY5TWaLV2N-mzRd_rbMpVtXDsFQg-SNiBAbKf_Unr7ulrGKneooqqfwRvSEq2tiRHrSEF5TeLxV_1A3m29CAsB5Rw5Wyk.5e2-E3OpxCa8I6Pd2Pk6Ej8mcVBqRowqenZo6H9T4Ho&dib_tag=se&keywords=memoria+ram+ddr4+8gb&qid=1775002138&sprefix=memoria+ram%2Caps%2C312&sr=8-3"
+    },
+    {
+      "store": "Kabum",
+      "url": "https://www.kabum.com.br/produto/172365/memoria-ram-kingston-fury-beast-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb-8"
+    },
+    {
+      "store": "Terabyte",
+      "url": "https://www.terabyteshop.com.br/produto/19314/memoria-kingston-fury-beast-8gb-3200mhz-ddr4-black-kf432c16bb8"
+    }
+  ],
+  "check_interval_seconds": 3600
+}
